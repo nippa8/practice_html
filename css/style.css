@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/* common*/
+
+body{
+  font-size:14px;
+  /*font-family: Verdana,sans-serif ;*/
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  margin: 0;
+  padding:0;
+  color: #333;
+  background: #fff08c;
+}
+
+p{
+  line-height: 2;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+section{
+  padding: 60px 0;
+
+}
+
+section h2{
+  text-align: center;
+  margin: 0 0 60px;
+}
+
+section:nth-child(even){
+  background: #fff;
+}
+
+/* header */
+.header-mobile-menu{
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header-pc-menu{
+  display: none;
+}
+
+
+/* features*/
+
+.features img{
+  width: 100%;
+}
+
+.features .item{
+  margin-bottom: 60px;
+}
+
+.features .item:last-child{
+  margin-bottom: 0px;
+}
+
+/* news */
+
+.news img{
+  width: 100%;
+}
+
+.news .item{
+  text-align: center;
+}
+
+.news .item{
+  margin-bottom: 60px;
+}
+
+.news .item:last-child{
+  margin-bottom: 0px;
+}
+
+.news .item p{
+  text-align: left;
+}
+
+/* how to use*/
+.how-to-use iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.iframe-wrapper{
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+}
+/* footer*/
+
+footer{
+  text-align: center;
+  color: #rgb(138, 8, 186);
+  padding: 60px 0;
+}
+
+/* medium */
+
+@media (min-width: 570px){
+  /*body{
+  background: #36e792;
+  }*/
+  .features p{
+    width:45%;
+  }
+
+  .features img{
+    width: 50%;
+  }
+
+  /*.pull-right{*/
+  .right-side{
+    float:right;
+    padding-left: 5%;
+  }
+
+  .left-side{
+    float:left;
+    padding-right: 5%;
+  }
+
+  .features .item{
+    overflow: hidden;
+  }
+
+
+
+  .news .container  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .news .item {
+    width: 30%;
+
+  }
+
+
+  .news .item img{
+    width 100%;
+  }
+
+
+}
+
+/* large */
+
+@media (min-width: 820px){
+  /*body{
+  background: #00c6da;
+  }*/
+
+  .container{
+    width: 800px;
+  }
+
+  .header-mobile-menu{
+    display: none;
+  }
+
+  .header-pc-menu{
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: right;
+    font-size:0;
+  }
+
+  .header-pc-menu li{
+    display: inline-block;
+    text-align: center;
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-pc-menu li:hover{
+    transition: .5s;
+    background: rgba(143, 156, 0, 0.26);
+  }
+
+  .header-pc-menu > li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    padding:10px;
+    font-size:16px;
+  }
+
+  .header-pc-menu > li >a{
+    text-decoration: none;
+
+  }
+
+
+}
